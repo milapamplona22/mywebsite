@@ -23,35 +23,35 @@ knitr::opts_chunk$set(message = F)
 body {text-align: left}
 </style>
 
-___
+## Publications, Tutorials, Talks
 
-## 1. Variation in hooman food
+##
 
-Hoomans love their food, and I love to qualitatively assess the variation across hooman food. 
+1. (Preprint) _**PAMPLONA BARBOSA, M. M., Arruda Fiuza de Toledo, M., Oda, G. A., and Frazao Helene, A._ [*The Cost of Re-Entrainment in a Leaf-Cutter Ant Colony*](http://dx.doi.org/10.2139/ssrn.4503956)
 
->_I love protein-rich food. Sometimes, pasta is okay._
+2. _**GOÉS, Y. and BARBOSA, M.M.P.**_ [*A dive in the Brazilian chaos: an analysis of the COVID-19 pandemic and its possible impacts on the country's future*](https://www.researchgate.net/publication/359510369_A_dive_in_the_Brazilian_chaos_an_analysis_of_the_COVID-19_pandemic_and_its_possible_impacts_on_the_country's_future). ISA Annual Convention, Nashville, 2022. 
 
-### Story time 
+3.  _**Magalhães, H. F., Pamplona-Barbosa, M. M., Ge, L., Sengupta, A., Bhatia, S. **_ Conflicts, lack of opportunities and underrepresented groups in Global South Science: challenges and perspectives. (in prep)
 
-I remember that one time, when my two favorite hoomans and I were driving from Florida to Arizona. On a sunny day in the middle of nowhere in Florida was nestled this beautiful, rustic town. This was the moment when I first met Arby's. What a beautiful day it was!
+4. _**BARBOSA, M. M. P.; SA, B.R.M.; ODA G.A.; HELENE A.F.**_ [*SINCRONIZAÇÃO DE RITMOS DIÁRIOS EM POPULAÇÕES DE FORMIGAS SAÚVA (Atta sexdens).*](www.atenaeditora.com.br/post-artigo/34671)
 
-```{r, fig.cap="Me and Arbys.", out.width = '50%', fig.align='center'}
-knitr::include_graphics("me_doing_stuff.jpg")
-```
-   
-___
+[*FULL CV*](https://docs.google.com/document/d/1BBYwX0PlkZuDnkyxQhcOC9op2IgGFnOC/edit?usp=sharing&ouid=102271678736862208140&rtpof=true&sd=true)
 
-## 2. Temporal patterns of food availability
+----------------------------------
 
-> **Do hooman food availability show circadian rhythms?**
+## Video-tracking software
 
-I have been studying the above question for a long time now. However, obtaining funds to publish in current times is hard.
+##
+During my master's at University of Sao Paulo I developed a video-tracking software able to count hundreds of thousands of leafcutter ants. Currently, we're developing a video-tracking tutorial so people can adapt our software to their needs in research. If you want to have access to the current version of the software, you can find it [*here*](https://github.com/milapamplona22/Formigometro/tree/contador). If you want to see our tutorial it is available here [*(work in progress)*](https://docs.google.com/document/d/1hr1IeRjo9JcRS8XTxprSgXEJnGas7AQjLb4lEowT3d0/edit?usp=sharing)
 
-___
-
-## 3. Future directions
-
-* Food availability in urban vs. natural habitats
-* Daily association between amount of food available and duration of walk
-
-___
+  <body>
+    <video width="540" height="540" controls>
+      <source src="formigastrilhaYolo5claro.mp4" type=video/mp4>
+    </video>
+  </body>
+  
+  <body>
+    <video width="540" height="540" controls>
+      <source src="formigastrilhaYolo5escuro.mp4" type=video/mp4>
+    </video>
+  </body>

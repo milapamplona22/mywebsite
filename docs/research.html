@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -14,27 +13,41 @@
 
 <title>Research</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.23/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.0/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs) {
   hljs.configure({languages: []});
@@ -47,32 +60,8 @@ if (window.hljs) {
 
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
+
 
 
 
@@ -82,10 +71,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -102,40 +87,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 45px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h2 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h3 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h4 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h5 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
-.section h6 {
-  padding-top: 50px;
-  margin-top: -50px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -163,7 +124,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -175,7 +136,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -185,11 +146,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -201,13 +179,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -215,16 +192,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -237,6 +207,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -265,6 +236,12 @@ $(document).ready(function () {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -320,7 +297,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -334,12 +311,12 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.html">Estrella da Boss</a>
+      <a class="navbar-brand" href="index.html">Mila Pamplona</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -360,20 +337,14 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://twitter.com/another_ant_guy">
+  <a href="https://twitter.com/mila_pamplona">
     <span class="fa fa-twitter"></span>
      
   </a>
 </li>
 <li>
-  <a href="https://www.linkedin.com/in/biplabendu/">
+  <a href="https://www.linkedin.com/in/mila-pamplona-15b91399/">
     <span class="fa fa-linkedin"></span>
-     
-  </a>
-</li>
-<li>
-  <a href="https://www.facebook.com/biplabendu">
-    <span class="fa fa-facebook"></span>
      
   </a>
 </li>
@@ -382,7 +353,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -394,40 +365,61 @@ div.tocify {
 <style>
 body {text-align: left}
 </style>
-<hr />
-<div id="variation-in-hooman-food" class="section level2">
-<h2>1. Variation in hooman food</h2>
-<p>Hoomans love their food, and I love to qualitatively assess the variation across hooman food.</p>
-<blockquote>
-<p><em>I love protein-rich food. Sometimes, pasta is okay.</em></p>
-</blockquote>
-<div id="story-time" class="section level3">
-<h3>Story time</h3>
-<p>I remember that one time, when my two favorite hoomans and I were driving from Florida to Arizona. On a sunny day in the middle of nowhere in Florida was nestled this beautiful, rustic town. This was the moment when I first met Arby’s. What a beautiful day it was!</p>
-<div class="figure" style="text-align: center">
-<img src="me_doing_stuff.jpg" alt="Me and Arbys." width="50%" />
-<p class="caption">
-Me and Arbys.
-</p>
+<div id="publications-tutorials-talks" class="section level2">
+<h2>Publications, Tutorials, Talks</h2>
 </div>
+<div id="section" class="section level2">
+<h2></h2>
+<ol style="list-style-type: decimal">
+<li><p>(Preprint) _**PAMPLONA BARBOSA, M. M., Arruda Fiuza de Toledo,
+M., Oda, G. A., and Frazao Helene, A._ <a
+href="http://dx.doi.org/10.2139/ssrn.4503956"><em>The Cost of
+Re-Entrainment in a Leaf-Cutter Ant Colony</em></a></p></li>
+<li><p><em><strong>GOÉS, Y. and BARBOSA, M.M.P.</strong></em> <a
+href="https://www.researchgate.net/publication/359510369_A_dive_in_the_Brazilian_chaos_an_analysis_of_the_COVID-19_pandemic_and_its_possible_impacts_on_the_country&#39;s_future"><em>A
+dive in the Brazilian chaos: an analysis of the COVID-19 pandemic and
+its possible impacts on the country’s future</em></a>. ISA Annual
+Convention, Nashville, 2022.</p></li>
+<li><p><em><strong>Magalhães, H. F., Pamplona-Barbosa, M. M., Ge, L.,
+Sengupta, A., Bhatia, S. </strong></em> Conflicts, lack of opportunities
+and underrepresented groups in Global South Science: challenges and
+perspectives. (in prep)</p></li>
+<li><p><em><strong>BARBOSA, M. M. P.; SA, B.R.M.; ODA G.A.; HELENE
+A.F.</strong></em> <a
+href="www.atenaeditora.com.br/post-artigo/34671"><em>SINCRONIZAÇÃO DE
+RITMOS DIÁRIOS EM POPULAÇÕES DE FORMIGAS SAÚVA (Atta
+sexdens).</em></a></p></li>
+</ol>
+<p><a
+href="https://docs.google.com/document/d/1BBYwX0PlkZuDnkyxQhcOC9op2IgGFnOC/edit?usp=sharing&amp;ouid=102271678736862208140&amp;rtpof=true&amp;sd=true"><em>FULL
+CV</em></a></p>
 <hr />
 </div>
+<div id="video-tracking-software" class="section level2">
+<h2>Video-tracking software</h2>
 </div>
-<div id="temporal-patterns-of-food-availability" class="section level2">
-<h2>2. Temporal patterns of food availability</h2>
-<blockquote>
-<p><strong>Do hooman food availability show circadian rhythms?</strong></p>
-</blockquote>
-<p>I have been studying the above question for a long time now. However, obtaining funds to publish in current times is hard.</p>
-<hr />
-</div>
-<div id="future-directions" class="section level2">
-<h2>3. Future directions</h2>
-<ul>
-<li>Food availability in urban vs. natural habitats</li>
-<li>Daily association between amount of food available and duration of walk</li>
-</ul>
-<hr />
+<div id="section-1" class="section level2">
+<h2></h2>
+<p>During my master’s at University of Sao Paulo I developed a
+video-tracking software able to count hundreds of thousands of
+leafcutter ants. Currently, we’re developing a video-tracking tutorial
+so people can adapt our software to their needs in research. If you want
+to have access to the current version of the software, you can find it
+<a
+href="https://github.com/milapamplona22/Formigometro/tree/contador"><em>here</em></a>.
+If you want to see our tutorial it is available here <a
+href="https://docs.google.com/document/d/1hr1IeRjo9JcRS8XTxprSgXEJnGas7AQjLb4lEowT3d0/edit?usp=sharing"><em>(work
+in progress)</em></a></p>
+<body>
+<video width="540" height="540" controls>
+<source src="formigastrilhaYolo5claro.mp4" type=video/mp4>
+</video>
+</body>
+<body>
+<video width="540" height="540" controls>
+<source src="formigastrilhaYolo5escuro.mp4" type=video/mp4>
+</video>
+</body>
 </div>
 
 
@@ -441,7 +433,7 @@ Me and Arbys.
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -459,7 +451,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -468,6 +460,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
@@ -480,7 +475,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

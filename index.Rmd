@@ -1,5 +1,5 @@
 ---
-title: "Welcome Hooman"
+title: "Mila Pamplona"
 output: 
   html_document:
     theme: yeti
@@ -14,26 +14,42 @@ pacman::p_load(knitr)
 
 ###
 
-```{r, echo=FALSE, fig.cap="Hi! I am Estrella.", out.width = '30%', fig.align='center'}
-knitr::include_graphics("my_smiling_face_here.jpg")
+```{r, echo=FALSE, fig.cap="Hello! I am Mila.", out.width = '30%', fig.align='center'}
+knitr::include_graphics("smiling_labcoat.jpg")
 ```
    
 <h6 style="text-align: center;" markdown="1">
 
-Email: da_boss_estrella [at] hotmail [dot] com
+Email: milapamplona@stanford.edu
 
 </h6>     
 
-I am a budding biolgist always curious about human behavior, especially the temporal patterns in which hoomans do and do not provide food. You can find out more about my day to day activities from some of my hooman friends, such as [Biplabendu Das](https://biplabendu.github.io/homepage/).
+I'm a brazilian biologist interested in biological rhythms and animal behavior, especially in social insects and their collective behavior. Currently, I'm a PhD student at Stanford University and I have the priviledge (and the luck) to be coadvised by two amazing women researchers: Deborah Gordon and Lauren O'Connell. I'm passionate about science communication and advocacy for diversity, equality and inclusion in science! I believe science and education are important tools to fight social inequality. I also have a podcast and blog in portuguese. You can find out more about my podcast Charlando [here](https://www.charlandopodcast.com/).
 
+```{r, echo=FALSE, out.width = '30%', fig.align='center'}
+knitr::include_graphics("me_brazilianflag.jpg")
+```
 
 ----------------------------------
 
-## Publications, Tutorials, Talks
+## More about me
 
 ##
+```{r, echo=FALSE, out.width = '30%', fig.align='center'}
+knitr::include_graphics("split_church.jpg")
+```
 
-2. _**Das, B.**, Brouns, R., Will, I., Brachmann, A., de Bekker, C. (2023)_ Using RNASeq to investigate the involvement of the _Ophiocordyceps_ clock in ant host infection and behavioral manipulation. _bioRxiv_ [*PDF*](https://www.biorxiv.org/content/10.1101/2023.01.20.524843v2.abstract)
+</h6>     
+
+Besides being a passionate young scientist, I spend my free time playing the drums, dancing, trying to learn how to play the ukulele, and mostly: playing with my lovely cats and emotional support animals: Alfredo and Haroldo.
+
+```{r, echo=FALSE, fig.cap="Hi, I'm Haroldinho", out.width = '30%', fig.align='center'}
+knitr::include_graphics("Alfredinho.jpg")
+```
+
+```{r, echo=FALSE, fig.cap="Hi, I'm Alfredinho", out.width = '30%', fig.align='center'}
+knitr::include_graphics("Haroldinho.jpg")
+```
 
 
-1. _**Das, B.**, Brachmann, A., de Bekker, C. (2023)_ Both behavior-manipulating and non-manipulating entomopathogenic fungi affect rhythmic gene expression in carpenter ant foragers upon infection. _bioRxiv_ [*PDF*](https://www.biorxiv.org/content/10.1101/2023.01.19.524837v2.abstract)
+

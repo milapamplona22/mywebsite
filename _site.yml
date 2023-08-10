@@ -7,7 +7,7 @@ output:
     lib_dir: site_libs
     self_contained: no
 navbar:
-  title: Estrella da Boss
+  title: Mila Pamplona
   left:
   - text: Home
     href: index.html
@@ -17,7 +17,7 @@ navbar:
     icon: fa-flask
   right:
   - icon: fa-twitter
-    href: https://twitter.com/another_ant_guy
+    href: https://twitter.com/mila_pamplona
     align: right
-  - { icon: "fa-linkedin", href: "https://www.linkedin.com/in/biplabendu/", align: right }
-  - { icon: "fa-facebook", href: "https://www.facebook.com/biplabendu", align: right }
+  - { icon: "fa-linkedin", href: "https://www.linkedin.com/in/mila-pamplona-15b91399/", align: right }
+ 
