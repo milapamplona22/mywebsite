@@ -27,7 +27,7 @@ body {text-align: left}
 
 ##
 
-1. (Preprint) _**PAMPLONA BARBOSA, M. M., Arruda Fiuza de Toledo, M., Oda, G. A., and Frazao Helene, A._ [*The Cost of Re-Entrainment in a Leaf-Cutter Ant Colony*](http://dx.doi.org/10.2139/ssrn.4503956)
+1. (Preprint) _**PAMPLONA BARBOSA, M. M., Arruda Fiuza de Toledo, M., Oda, G. A., and Frazao Helene, A.**_ [*The Cost of Re-Entrainment in a Leaf-Cutter Ant Colony*](http://dx.doi.org/10.2139/ssrn.4503956)
 
 2. _**GOÉS, Y. and BARBOSA, M.M.P.**_ [*A dive in the Brazilian chaos: an analysis of the COVID-19 pandemic and its possible impacts on the country's future*](https://www.researchgate.net/publication/359510369_A_dive_in_the_Brazilian_chaos_an_analysis_of_the_COVID-19_pandemic_and_its_possible_impacts_on_the_country's_future). ISA Annual Convention, Nashville, 2022. 
 
