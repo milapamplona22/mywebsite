@@ -43,11 +43,11 @@ knitr::include_graphics("split_church.jpg")
 
 Besides being a passionate young scientist, I spend my free time playing the drums, dancing, trying to learn how to play the ukulele, and mostly: playing with my lovely cats and emotional support animals: Alfredo and Haroldo.
 
-```{r, echo=FALSE, fig.cap="Hi, I'm Haroldinho", out.width = '30%', fig.align='center'}
+```{r, echo=FALSE, fig.cap="Hi, I'm Alfredinho", out.width = '30%', fig.align='center'}
 knitr::include_graphics("Alfredinho.jpg")
 ```
 
-```{r, echo=FALSE, fig.cap="Hi, I'm Alfredinho", out.width = '30%', fig.align='center'}
+```{r, echo=FALSE, fig.cap="Hi, I'm Haroldinho", out.width = '30%', fig.align='center'}
 knitr::include_graphics("Haroldinho.jpg")
 ```
 
