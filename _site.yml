@@ -7,7 +7,7 @@ output:
     lib_dir: site_libs
     self_contained: no
 navbar:
-  title: Mila Pamplona
+  title: "Mila Pamplona"
   left:
   - text: Home
     href: index.html
